@@ -140,11 +140,17 @@
           <ul class="nav-bar">
             <input type="checkbox" id="check" />
             <span class="menu bg-[#2f2f2f]">
-              <li><a class="text-white" href="">Home</a></li>
-              <li><a class="text-white" href="">Products</a></li>
-              <li><a class="text-white" href="">Services</a></li>
-              <li><a class="text-white" href="">About</a></li>
-              <li><a class="text-white" href="">Contact</a></li>
+              <li><a class="text-white hover:bg-zinc-800" href="">Home</a></li>
+              <li>
+                <a class="text-white hover:bg-zinc-800" href="">Products</a>
+              </li>
+              <li>
+                <a class="text-white hover:bg-zinc-800" href="">Services</a>
+              </li>
+              <li><a class="text-white hover:bg-zinc-800" href="">About</a></li>
+              <li>
+                <a class="text-white hover:bg-zinc-800" href="">Contact</a>
+              </li>
               <label
                 for="check"
                 class="close-menu text-white font-semibold text-2xl py-2 px-5 bg-[#2f2f2f]"
@@ -159,26 +165,6 @@
           </ul>
         </nav>
 
-        <!-- nav for mobile > -->
-        <!-- <div class="">
-        <label class="hambuger-menu">
-          test
-          <input type="checkbox" class="absolute right-4" />
-        </label>
-        <div class="sidebar w-full absolute">
-          <nav class="bg-blue-500">
-            <div class="text-white font-semibold">This</div>
-            <div class="text-white font-semibold">This</div>
-            <div class="text-white font-semibold">This</div>
-            <div class="text-white font-semibold">This</div>
-          </nav>
-        </div>
-      </div> -->
-        <!-- nav for mobile > -->
-        <!-- // -->
-        <!-- navbar for md  -->
-        <!-- I -->
-        <!-- V  -->
         <div>
           <ul
             id=""
@@ -210,8 +196,8 @@
       <!-- navbar -->
 
       <!-- hero section  -->
-      <div id="hero" class="h-[600px] px-6">
-        <div class="md:ml-32 pt-52">
+      <div id="hero" class="min-h-[600px] px-6 py-4">
+        <div class="md:ml-32 md:pt-52 pt-32">
           <h1 class="uppercase text-white font-semibold text-2xl pb-4">
             Grab your copy of
           </h1>
@@ -234,7 +220,7 @@
       <!-- hero section  -->
 
       <!-- services  -->
-      <div class="px-32 py-16">
+      <div class="md:px-32 px-4 py-16">
         <h1 class="tracking-[1px] mb-5 text-center text-2xl text-[#7c6c62]">
           Services we provide
         </h1>
@@ -293,7 +279,7 @@
       <!-- services  -->
 
       <!-- blog  -->
-      <div class="py-16 px-32">
+      <div class="py-16 md:px-32 px-4">
         <h1
           class="font-semibold uppercase text-center text-4xl text-[#78695f] pb-7 tracking-wide"
         >
@@ -305,8 +291,8 @@
           imperdiet doming id quod mazim
         </p>
         <!-- blog card 1 -->
-        <div class="flex mt-16 py-6">
-          <div class="w-1/2 relative">
+        <div class="flex md:flex-row flex-col mt-16 py-6">
+          <div class="md:w-1/2 relative">
             <img src="../public/camera-picture.png" alt="" />
             <button class="absolute top-1/2 -translate-y-1/2 z-10">
               <img src="../public/left-arrow.png" width="40" alt="" />
@@ -315,7 +301,7 @@
               <img src="../public/right-arrow.png" width="40" alt="" />
             </button>
           </div>
-          <div class="w-1/2">
+          <div class="md:w-1/2">
             <h1 class="text-[#7b6c63] py-1">10 april 2014</h1>
             <h1 class="text-[#212121] text-2xl py-1">
               Typi non habent claritatem insitam
@@ -331,8 +317,8 @@
         <!-- blog card 1 -->
 
         <!-- blog card 2 -->
-        <div class="flex mt-16 py-6">
-          <div class="w-1/2">
+        <div class="flex mt-16 py-6 md:flex-row flex-col">
+          <div class="md:w-1/2">
             <h1 class="text-[#7b6c63] py-1">20 march 2014</h1>
             <h1 class="text-[#212121] text-2xl py-1">
               Typi non habent claritatem insitam
@@ -344,18 +330,18 @@
               [...]
             </p>
           </div>
-          <div class="w-1/2">
+          <div class="md:w-1/2 flex justify-center mx-auto">
             <img src="../public/camera-picture.png" alt="" />
           </div>
         </div>
         <!-- blog card 2 -->
 
         <!-- blog card 3 -->
-        <div class="flex mt-16 py-6">
-          <div class="w-1/2">
+        <div class="flex md:flex-row flex-col mt-16 py-6">
+          <div class="md:w-1/2">
             <img src="../public/camera-picture.png" alt="" />
           </div>
-          <div class="w-1/2">
+          <div class="md:w-1/2">
             <h1 class="text-[#7b6c63] py-1">10 january 2014</h1>
             <h1 class="text-[#212121] text-2xl py-1">
               Typi non habent claritatem insitam
@@ -373,14 +359,14 @@
       <!-- blog  -->
 
       <!-- contact  -->
-      <div class="bg-[#f5f5f5] mx-auto px-52 py-14">
+      <div class="bg-[#f5f5f5] md:px-52 px-4 py-14">
         <h1
           class="text-[#7d6d63] tracking-wider font-semibold pb-14 text-4xl text-center uppercase"
         >
           Contact
         </h1>
-        <div class="flex flex-wrap">
-          <div class="md:w-1/2 flex flex-col pr-8">
+        <div class="flex flex-wrap md:flex-row flex-col">
+          <div class="md:w-1/2 flex flex-col md:pr-8">
             <input
               type="text"
               class="outline-none bg-[#f5f5f5] appearance-none border-b-4 border-[#5c5c5c] mb-2"
@@ -392,7 +378,7 @@
               >Email*</label
             >
           </div>
-          <div class="md:w-1/2 flex flex-col pl-8">
+          <div class="md:w-1/2 flex flex-col md:pl-8">
             <input
               type="text"
               class="outline-none bg-[#f5f5f5] appearance-none border-b-4 border-[#5c5c5c] mb-2"
@@ -428,7 +414,9 @@
 
       <!-- footer  -->
       <div class="overflow-hidden">
-        <div class="bg-[#212121] px-20 flex py-10 gap-4">
+        <div
+          class="bg-[#212121] px-20 flex flex-wrap md:flex-nowrap py-10 md:gap-4 gap-10"
+        >
           <div class="md:w-1/4">
             <h1
               class="text-[#7c6c62] text-5xl pb-5"
